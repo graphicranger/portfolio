@@ -1,59 +1,93 @@
+header {
+    display: flex;
+    padding: 26px;
+    gap: 20px;
+    justify-content: space-between;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #1d7874;
+}
+
+header img {
+    max-width: 80px;
+    margin-left: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.navbar a:hover {
+    color: #f15558;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 26px;
+    list-style: none;
+    margin: 0;
+    padding: 0 12px 0 0;
+}
+
 body {
-    background-color: #ffffff;
-    color: aliceblue;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    background-color: #071e22;
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
 }
 
-.container-fluid {
-    background-color: #2b2118;
-    color: azure;
-}
-
-.nav-link {
-    color: azure;
-}
-
-.nav-link.active {
-    background-color: #af9164 !important;
-}
-
-.nav-link:hover {
-    color: #6f1a07 !important; /* warna putih */
-}
-
-.d-flex:hover {
-    color: #6f1a07 !important; /* warna putih */
-}
 
 .two-column-layout {
-    background-color: #f7f3e3;
-    color: #000f08;
+    background-color: #071e22;
+    color: #fff;
     align-items: center;
     text-align: justify;
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: ;
+    padding: 70px 70px 0 70px;
+    gap: 70px;
+}
+
+h1 {
+    font-weight: bold; margin-left: 20px;
+}
+
+.judul {
     padding: 70px;
-    gap: 60px;
+    margin-left: 20px;
 }
 
 /* Extra small devices (phones, 0px - 600px) */
 /* Default styles - no media query needed */
 
 /* Small devices (portrait tablets, large phones, 600px and up) */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .two-column-layout{
-        background-color: #f7f3e3;
-        color: #000f08;
+        background-color: #071e22;
+        color: #fff;
         display: block;
         align-items: center;
         text-align: justify;
-        padding: 70px;
+        padding: 70px 70px 0 70px;
         gap: 60px;
     }
 
     .two-column-layout img {
         max-width: 70%;
+    }
+
+    .two-column-layout p {
+        margin-bottom: 30px;
+    }
+
+    .tulisan {
+        margin-bottom: 30px;
+    }
+
+    header img {
+
+    margin-left: 30px;
     }
 }
 
@@ -68,3 +102,7 @@ body {
 
 /* XXL devices (4K, 1400px and up) */
 @media (min-width: 1400px) { ... }
+
+html {
+    scroll-behavior: smooth;
+}
