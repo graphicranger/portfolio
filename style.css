@@ -1,0 +1,70 @@
+body {
+    background-color: #ffffff;
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container-fluid {
+    background-color: #2b2118;
+    color: azure;
+}
+
+.nav-link {
+    color: azure;
+}
+
+.nav-link.active {
+    background-color: #af9164 !important;
+}
+
+.nav-link:hover {
+    color: #6f1a07 !important; /* warna putih */
+}
+
+.d-flex:hover {
+    color: #6f1a07 !important; /* warna putih */
+}
+
+.two-column-layout {
+    background-color: #f7f3e3;
+    color: #000f08;
+    align-items: center;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: ;
+    padding: 70px;
+    gap: 60px;
+}
+
+/* Extra small devices (phones, 0px - 600px) */
+/* Default styles - no media query needed */
+
+/* Small devices (portrait tablets, large phones, 600px and up) */
+@media (max-width: 600px) {
+    .two-column-layout{
+        background-color: #f7f3e3;
+        color: #000f08;
+        display: block;
+        align-items: center;
+        text-align: justify;
+        padding: 70px;
+        gap: 60px;
+    }
+
+    .two-column-layout img {
+        max-width: 70%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large laptops/desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+/* XXL devices (4K, 1400px and up) */
+@media (min-width: 1400px) { ... }
